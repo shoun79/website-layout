@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            height: 400px;
+            border: 2px solid red;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .box {
+            width: 100px;
+            border: 2px dotted;
+        }
+
+        #box-3 {
+            flex-grow: .2;
+        }
+
+        #box-2 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div id="box-2" class="box">box2</div>
+        <div id="box-3" class="box">box3</div>
+
+    </div>
+</body>
+
+</html>
